@@ -73,4 +73,6 @@ Wmsb::Application.configure do
       :metastore    => Dalli::Client.new,
       :entitystore  => 'file:tmp/cache/rack/body',
       :allow_reload => false
+
+  config.eager_load = true
 end
